@@ -1,0 +1,9 @@
+<%- include ("header") -%>
+
+
+
+<% exerciseLog.forEach((object, i)=>{ %>
+  <div class="">
+    <p>Exercise Type: <%=  object.description %>, Duration: <%= object.duration %>, Date: <%= object.date %> </p>
+  </div>
+<% }) %>

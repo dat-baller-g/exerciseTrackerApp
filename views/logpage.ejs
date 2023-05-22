@@ -1,0 +1,53 @@
+<%- include ("header") -%>
+
+<div class="">
+  <h2>Hello <%= Username %> </h2>
+  <p>You have successfully logged in the following details:</p>
+</div>
+<div class="">
+  <h2> Exercise Type: <%= ExerciseLog %> </h2>
+</div>
+<div class="">
+  <h2>Exercise Duration: mins <%= ExerciseDuration %> mins</h2>
+</div>
+
+<div class="">
+  <h2>Date: <%= ExerciseDate %> </h2>
+</div>
+
+<div class="">
+  <h2> <%= Count %></h2>
+</div>
+<form class="" action="/api/user/home" method="post">
+  <button type="submit" name="homePageBtn" value="<%= Username %>">Home Page</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  // const exerciseForm = document.getElementById("exerciselog-form");
+  //
+  // exerciseForm.addEventListener("submit", () => {
+  //   const username = document.getElementById("user").value;
+  //   exerciseForm.action = `/api/users/${username}/exercise`;
+  //
+  //   exerciseForm.submit();
+  // });
+
+</script>

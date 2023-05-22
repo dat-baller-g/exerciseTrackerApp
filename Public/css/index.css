@@ -1,0 +1,71 @@
+body{
+  /* background-color: yellow; */
+  background:url("/images/sport2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* color: #140733; */
+  color: #D3DDE7
+}
+
+.container-fluid{
+  width: 80%;
+  margin: auto;
+  margin-top: 4%;
+  padding: 2%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  box-shadow: 5px 2px 5px #888888;
+  /* display: flex; */
+
+}
+
+#top-heading{
+  font-size: 30px;
+  font-family: 'Festive', cursive;
+}
+
+.form-container{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.exercise-div{
+  width: 50%;
+  box-shadow: 5px 2px 20px #888888;
+
+}
+
+.view-logs-div{
+  width: 50%;
+  box-shadow: 5px 2px 20px #888888;
+}
+
+.form-heading{
+  margin-top: 10px;
+}
+
+input{
+  border-radius:10px;
+  padding: 1%;
+  border: 0;
+  margin: 6px;
+}
+
+.btn-success{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  justify-content: center;
+  text-align: center;
+}

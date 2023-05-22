@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="/css/logPage.css">
+  </head>
+  <body>
+    <div class="" id="container">
+      <h1>Your Exercise Log</h1>
+
+      <form class="" id="exerciselog-form" action="/api/users/:username/exercise" method="get">
+        <input type="text" name="username" value="" id="uname">
+        <input type="submit" name="submit" value="">
+      </form>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+      const exerciseForm = document.getElementById("exerciselog-form");
+
+      exerciseForm.addEventListener("submit", () => {
+        const username = document.getElementById("uname").value;
+        exerciseForm.action = `/api/users/${username}/exercise`;
+
+        exerciseForm.submit();
+      });
+
+
+      const div = document.getElementById("container");
+      // const username = document.getElementById("uname").value;
+      const urlRequest = `/api/users/${username}/exercise`
+      let request = new XMLHttpRequest();
+      request.open("GET", urlRequest);
+      request.responseType = "json";
+      request.send();
+
+      request.onload = function(){
+        console.log(started);
+        const users = request.response;
+        const parag = document.createElement("p");
+        parag.textContent = users.Username;
+        div.appendChild(parag)
+
+      }
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

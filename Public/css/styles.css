@@ -1,0 +1,41 @@
+.container-fluid{
+  width: 100%;
+  margin: auto;
+  display: flex;
+
+}
+
+.sign-in-btn{
+  display: block;
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
+.register-btn{
+  display: block;
+  margin-left: 30%;
+  margin-top: 3%;
+}
+
+.form-outline{
+  display: inline;
+}
+
+.sign-in-form-div{
+  margin-bottom: 10%;
+}
+
+.form-group-div{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lead{
+  font-weight: bold;
+}
+
+#top-heading{
+  font-size: 40px;
+}

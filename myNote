@@ -1,0 +1,8 @@
+Install and require all the necessary packages.
+set up the env file while adding all the necessary env variales to it.
+connect with the mongoose database
+create your schema then model
+write an api with the post method to create new user
+write code to check if user already exists, if so, send message, if not create new user.
+write an api with the post method to log in user details into the database.
+With a get method, write an api that fetches the log from the database.

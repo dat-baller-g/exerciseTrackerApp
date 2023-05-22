@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/logPage.css">
+
+
+  </head>
+  <body>
+    <header>
+      <h2 id="head"></h2>
+
+    </header>
+
+
+
+
+
+    <script type="text/javascript">
+      const header = document.querySelector('header')
+
+      let urlRequest = 'http://localhost:3000/api/myusers';
+      let request = new XMLHttpRequest();
+      request.open('GET', urlRequest);
+      request.responseType = 'json';
+      request.send();
+
+      request.onload = function(){
+        console.log('here too')
+        const users = request.response;
+        const myH1 = document.getElementById("head");
+        myH1.textContent = users[0]["clientName"];
+        for(i=0; i<users.length; i++){
+          const p = document.createElement("p")
+          p.textContent = "Username: " + users[i]["clientName"] + ". UserId: " + users[i]["_id"]
+          header.appendChild(p)
+
+        }
+        //header.appendChild(myH1)
+      }
+
+      
+
+    </script>
+  </body>
+</html>
